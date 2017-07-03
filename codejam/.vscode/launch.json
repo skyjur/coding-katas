@@ -1,0 +1,71 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "C++ Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}.o",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": true,
+            "linux": {
+                "MIMode": "gdb",
+                "setupCommands": [
+                    {
+                        "description": "Enable pretty-printing for gdb",
+                        "text": "-enable-pretty-printing",
+                        "ignoreFailures": true
+                    }
+                ]
+            },
+            "osx": {
+                "MIMode": "lldb"
+            },
+            "windows": {
+                "program": "${fileDirname}/${fileBasenameNoExtension}.exe",
+                "MIMode": "gdb",
+                "miDebuggerPath": "C:\\mingw\\bin\\gdb.exe",
+                "setupCommands": [
+                    {
+                        "description": "Enable pretty-printing for gdb",
+                        "text": "-enable-pretty-printing",
+                        "ignoreFailures": true
+                    }
+                ]
+            }
+        },
+        {
+            "name": "C++ Launch in Bash",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "args": ["-fThreading"],
+            "stopAtEntry": false,
+            "cwd": "/mnt/z/Bash/kitchensink",
+            "environment": [],
+            "externalConsole": true,
+            "windows": {
+                "MIMode": "gdb",
+                "setupCommands": [
+                    {
+                        "description": "Enable pretty-printing for gdb",
+                        "text": "-enable-pretty-printing",
+                        "ignoreFailures": true
+                    }
+                ]
+            }, 
+            "pipeTransport": {
+                "pipeCwd": "",
+                "pipeProgram": "c:\\windows\\sysnative\\bash.exe",
+                "pipeArgs": ["-c"],
+                "debuggerPath": "/usr/bin/gdb"
+            },
+            "sourceFileMap": {
+                "/mnt/z": "z:\\"
+            }
+        }
+    ]
+}

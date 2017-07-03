@@ -1,0 +1,30 @@
+{
+    "files.associations": {
+        "xlocale": "cpp",
+        "stdexcept": "cpp",
+        "vector": "cpp",
+        "xstring": "cpp",
+        "algorithm": "cpp",
+        "tuple": "cpp",
+        "xiosbase": "cpp",
+        "initializer_list": "cpp",
+        "type_traits": "cpp",
+        "xutility": "cpp",
+        "iosfwd": "cpp",
+        "istream": "cpp",
+        "cstdio": "cpp",
+        "sstream": "cpp",
+        "string": "cpp",
+        "utility": "cpp",
+        "ios": "cpp",
+        "xtree": "cpp",
+        "fstream": "cpp",
+        "ostream": "cpp",
+        "iostream": "cpp",
+        "xmemory": "cpp"
+    },
+    "cppcheck.includePaths": [
+        "Program Files (x86)/Microsoft Visual Studio 14.0/VC/include",
+        "${workspaceRoott}"
+    ]
+}
